@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0A197C2BDD5A7041C5B5C3EA /* libPods-YJXMLYFM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9B8851101143BC4C7F1FB0 /* libPods-YJXMLYFM.a */; };
+		21255A661F4287A200295628 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21255A631F4287A200295628 /* AppDelegate.m */; };
+		21255A691F4287C600295628 /* XMLYMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 21255A681F4287C600295628 /* XMLYMacro.m */; };
+		21255A6E1F428A5200295628 /* RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21255A6D1F428A5200295628 /* RootController.m */; };
+		21255A711F42E67D00295628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21255A701F42E67D00295628 /* Assets.xcassets */; };
 		2173F3C91F4197870092A877 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173F3C81F4197870092A877 /* main.m */; };
-		2173F3CC1F4197870092A877 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173F3CB1F4197870092A877 /* AppDelegate.m */; };
 		2173F3CF1F4197870092A877 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173F3CE1F4197870092A877 /* ViewController.m */; };
 		2173F3D21F4197870092A877 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2173F3D01F4197870092A877 /* Main.storyboard */; };
-		2173F3D41F4197870092A877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2173F3D31F4197870092A877 /* Assets.xcassets */; };
 		2173F3D71F4197870092A877 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2173F3D51F4197870092A877 /* LaunchScreen.storyboard */; };
 		2173F3E21F4197880092A877 /* YJXMLYFMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173F3E11F4197880092A877 /* YJXMLYFMTests.m */; };
 		2173F3ED1F4197880092A877 /* YJXMLYFMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173F3EC1F4197880092A877 /* YJXMLYFMUITests.m */; };
@@ -36,14 +38,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21255A621F4287A200295628 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		21255A631F4287A200295628 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		21255A671F4287C600295628 /* XMLYMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYMacro.h; sourceTree = "<group>"; };
+		21255A681F4287C600295628 /* XMLYMacro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYMacro.m; sourceTree = "<group>"; };
+		21255A6A1F4289C800295628 /* XMLYPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMLYPrefixHeader.pch; sourceTree = "<group>"; };
+		21255A6C1F428A5200295628 /* RootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootController.h; sourceTree = "<group>"; };
+		21255A6D1F428A5200295628 /* RootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootController.m; sourceTree = "<group>"; };
+		21255A701F42E67D00295628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2173F3C41F4197870092A877 /* YJXMLYFM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJXMLYFM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2173F3C81F4197870092A877 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2173F3CA1F4197870092A877 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2173F3CB1F4197870092A877 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2173F3CD1F4197870092A877 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2173F3CE1F4197870092A877 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2173F3D11F4197870092A877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2173F3D31F4197870092A877 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2173F3D61F4197870092A877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2173F3D81F4197870092A877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2173F3DD1F4197880092A877 /* YJXMLYFMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YJXMLYFMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +90,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21255A611F4287A200295628 /* APPDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				21255A621F4287A200295628 /* AppDelegate.h */,
+				21255A631F4287A200295628 /* AppDelegate.m */,
+			);
+			path = APPDelegate;
+			sourceTree = "<group>";
+		};
+		21255A641F4287A200295628 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				21255A651F4287A200295628 /* XMLYMacro */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		21255A651F4287A200295628 /* XMLYMacro */ = {
+			isa = PBXGroup;
+			children = (
+				21255A671F4287C600295628 /* XMLYMacro.h */,
+				21255A681F4287C600295628 /* XMLYMacro.m */,
+			);
+			path = XMLYMacro;
+			sourceTree = "<group>";
+		};
+		21255A6B1F428A2400295628 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				21255A6C1F428A5200295628 /* RootController.h */,
+				21255A6D1F428A5200295628 /* RootController.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		21255A6F1F42E67D00295628 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				21255A701F42E67D00295628 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		2173F3BB1F4197870092A877 = {
 			isa = PBXGroup;
 			children = (
@@ -108,12 +158,13 @@
 		2173F3C61F4197870092A877 /* YJXMLYFM */ = {
 			isa = PBXGroup;
 			children = (
-				2173F3CA1F4197870092A877 /* AppDelegate.h */,
-				2173F3CB1F4197870092A877 /* AppDelegate.m */,
+				21255A6F1F42E67D00295628 /* Resources */,
+				21255A6B1F428A2400295628 /* Root */,
+				21255A611F4287A200295628 /* APPDelegate */,
+				21255A641F4287A200295628 /* General */,
 				2173F3CD1F4197870092A877 /* ViewController.h */,
 				2173F3CE1F4197870092A877 /* ViewController.m */,
 				2173F3D01F4197870092A877 /* Main.storyboard */,
-				2173F3D31F4197870092A877 /* Assets.xcassets */,
 				2173F3D51F4197870092A877 /* LaunchScreen.storyboard */,
 				2173F3D81F4197870092A877 /* Info.plist */,
 				2173F3C71F4197870092A877 /* Supporting Files */,
@@ -125,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				2173F3C81F4197870092A877 /* main.m */,
+				21255A6A1F4289C800295628 /* XMLYPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -277,7 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2173F3D71F4197870092A877 /* LaunchScreen.storyboard in Resources */,
-				2173F3D41F4197870092A877 /* Assets.xcassets in Resources */,
+				21255A711F42E67D00295628 /* Assets.xcassets in Resources */,
 				2173F3D21F4197870092A877 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,8 +404,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2173F3CF1F4197870092A877 /* ViewController.m in Sources */,
-				2173F3CC1F4197870092A877 /* AppDelegate.m in Sources */,
 				2173F3C91F4197870092A877 /* main.m in Sources */,
+				21255A691F4287C600295628 /* XMLYMacro.m in Sources */,
+				21255A661F4287A200295628 /* AppDelegate.m in Sources */,
+				21255A6E1F428A5200295628 /* RootController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +558,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C7G78L37X3;
+				GCC_PREFIX_HEADER = YJXMLYFM/XMLYPrefixHeader.pch;
 				INFOPLIST_FILE = YJXMLYFM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com..YJXMLYFM;
@@ -517,6 +572,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C7G78L37X3;
+				GCC_PREFIX_HEADER = YJXMLYFM/XMLYPrefixHeader.pch;
 				INFOPLIST_FILE = YJXMLYFM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com..YJXMLYFM;
@@ -593,6 +649,7 @@
 				2173F3F31F4197880092A877 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2173F3F41F4197880092A877 /* Build configuration list for PBXNativeTarget "YJXMLYFMTests" */ = {
 			isa = XCConfigurationList;
@@ -601,6 +658,7 @@
 				2173F3F61F4197880092A877 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2173F3F71F4197880092A877 /* Build configuration list for PBXNativeTarget "YJXMLYFMUITests" */ = {
 			isa = XCConfigurationList;
@@ -609,6 +667,7 @@
 				2173F3F91F4197880092A877 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

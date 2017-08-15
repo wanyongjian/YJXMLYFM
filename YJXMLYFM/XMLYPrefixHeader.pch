@@ -1,0 +1,16 @@
+//
+//  XMLYPrefixHeader.pch
+//  YJXMLYFM
+//
+//  Created by wanyongjian on 2017/8/15.
+//  Copyright © 2017年 eco. All rights reserved.
+//
+
+#ifndef XMLYPrefixHeader_pch
+#define XMLYPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "XMLYMacro.h"
+#endif /* XMLYPrefixHeader_pch */
