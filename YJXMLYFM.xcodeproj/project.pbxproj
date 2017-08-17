@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0A197C2BDD5A7041C5B5C3EA /* libPods-YJXMLYFM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9B8851101143BC4C7F1FB0 /* libPods-YJXMLYFM.a */; };
+		212050441F455EB100367080 /* XMLYBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212050431F455EB100367080 /* XMLYBaseController.m */; };
+		2120504A1F45601900367080 /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212050491F45601900367080 /* FindViewController.m */; };
+		2120504E1F45667D00367080 /* FindSubTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2120504D1F45667D00367080 /* FindSubTitleView.m */; };
 		21255A661F4287A200295628 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21255A631F4287A200295628 /* AppDelegate.m */; };
 		21255A691F4287C600295628 /* XMLYMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 21255A681F4287C600295628 /* XMLYMacro.m */; };
 		21255A6E1F428A5200295628 /* RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21255A6D1F428A5200295628 /* RootController.m */; };
@@ -38,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		212050421F455EB100367080 /* XMLYBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYBaseController.h; sourceTree = "<group>"; };
+		212050431F455EB100367080 /* XMLYBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYBaseController.m; sourceTree = "<group>"; };
+		212050481F45601900367080 /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
+		212050491F45601900367080 /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
+		2120504C1F45667D00367080 /* FindSubTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindSubTitleView.h; sourceTree = "<group>"; };
+		2120504D1F45667D00367080 /* FindSubTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindSubTitleView.m; sourceTree = "<group>"; };
 		21255A621F4287A200295628 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		21255A631F4287A200295628 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		21255A671F4287C600295628 /* XMLYMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYMacro.h; sourceTree = "<group>"; };
@@ -90,6 +99,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		212050411F455E9400367080 /* XMLYCommonUI */ = {
+			isa = PBXGroup;
+			children = (
+				212050421F455EB100367080 /* XMLYBaseController.h */,
+				212050431F455EB100367080 /* XMLYBaseController.m */,
+			);
+			path = XMLYCommonUI;
+			sourceTree = "<group>";
+		};
+		212050451F455FEC00367080 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				212050461F455FEC00367080 /* FindSection */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		212050461F455FEC00367080 /* FindSection */ = {
+			isa = PBXGroup;
+			children = (
+				2120504B1F45665B00367080 /* Views */,
+				212050471F455FEC00367080 /* Controllers */,
+			);
+			path = FindSection;
+			sourceTree = "<group>";
+		};
+		212050471F455FEC00367080 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				212050481F45601900367080 /* FindViewController.h */,
+				212050491F45601900367080 /* FindViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2120504B1F45665B00367080 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2120504C1F45667D00367080 /* FindSubTitleView.h */,
+				2120504D1F45667D00367080 /* FindSubTitleView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		21255A611F4287A200295628 /* APPDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +155,7 @@
 		21255A641F4287A200295628 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				212050411F455E9400367080 /* XMLYCommonUI */,
 				21255A651F4287A200295628 /* XMLYMacro */,
 			);
 			path = General;
@@ -158,6 +212,7 @@
 		2173F3C61F4197870092A877 /* YJXMLYFM */ = {
 			isa = PBXGroup;
 			children = (
+				212050451F455FEC00367080 /* Sections */,
 				21255A6F1F42E67D00295628 /* Resources */,
 				21255A6B1F428A2400295628 /* Root */,
 				21255A611F4287A200295628 /* APPDelegate */,
@@ -407,7 +462,10 @@
 				2173F3C91F4197870092A877 /* main.m in Sources */,
 				21255A691F4287C600295628 /* XMLYMacro.m in Sources */,
 				21255A661F4287A200295628 /* AppDelegate.m in Sources */,
+				212050441F455EB100367080 /* XMLYBaseController.m in Sources */,
+				2120504E1F45667D00367080 /* FindSubTitleView.m in Sources */,
 				21255A6E1F428A5200295628 /* RootController.m in Sources */,
+				2120504A1F45601900367080 /* FindViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

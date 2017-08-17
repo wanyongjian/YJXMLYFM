@@ -7,6 +7,9 @@
 //
 
 #import "RootController.h"
+#import "FindViewController.h"
+
+
 /** 播放按钮高出tabbar的长度*/
 #define BtnPlusLength 10
 
@@ -98,7 +101,7 @@
 }
 
 - (void)addControllers{
-    UIViewController *findCon = [[UIViewController alloc]init];
+    FindViewController *findCon = [[FindViewController alloc]init];
     [self creatControllerWithController:findCon property:@{@"title":@"发现"}];
     
     UIViewController *subscribeCon = [[UIViewController alloc]init];
