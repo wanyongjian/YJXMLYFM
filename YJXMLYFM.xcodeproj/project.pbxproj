@@ -21,6 +21,13 @@
 		2173F3D71F4197870092A877 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2173F3D51F4197870092A877 /* LaunchScreen.storyboard */; };
 		2173F3E21F4197880092A877 /* YJXMLYFMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173F3E11F4197880092A877 /* YJXMLYFMTests.m */; };
 		2173F3ED1F4197880092A877 /* YJXMLYFMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173F3EC1F4197880092A877 /* YJXMLYFMUITests.m */; };
+		21B441A61F4678B800F92EA5 /* XMLYBaseFindController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B441A51F4678B800F92EA5 /* XMLYBaseFindController.m */; };
+		21B441AE1F467AB300F92EA5 /* FindRecommendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B441AD1F467AB300F92EA5 /* FindRecommendController.m */; };
+		21B441B11F467ACD00F92EA5 /* FindCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B441B01F467ACD00F92EA5 /* FindCategoryController.m */; };
+		21B441B41F467ADB00F92EA5 /* FindRadioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B441B31F467ADB00F92EA5 /* FindRadioController.m */; };
+		21B441B71F467AEE00F92EA5 /* FindRankController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B441B61F467AEE00F92EA5 /* FindRankController.m */; };
+		21B441BD1F467FBD00F92EA5 /* FindAnchorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B441BC1F467FBD00F92EA5 /* FindAnchorController.m */; };
+		21B441C21F46C9BE00F92EA5 /* XMLYBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B441C11F46C9BE00F92EA5 /* XMLYBaseRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +75,20 @@
 		2173F3E81F4197880092A877 /* YJXMLYFMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YJXMLYFMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2173F3EC1F4197880092A877 /* YJXMLYFMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJXMLYFMUITests.m; sourceTree = "<group>"; };
 		2173F3EE1F4197880092A877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21B441A41F4678B800F92EA5 /* XMLYBaseFindController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYBaseFindController.h; sourceTree = "<group>"; };
+		21B441A51F4678B800F92EA5 /* XMLYBaseFindController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYBaseFindController.m; sourceTree = "<group>"; };
+		21B441AC1F467AB300F92EA5 /* FindRecommendController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindRecommendController.h; sourceTree = "<group>"; };
+		21B441AD1F467AB300F92EA5 /* FindRecommendController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindRecommendController.m; sourceTree = "<group>"; };
+		21B441AF1F467ACD00F92EA5 /* FindCategoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindCategoryController.h; sourceTree = "<group>"; };
+		21B441B01F467ACD00F92EA5 /* FindCategoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindCategoryController.m; sourceTree = "<group>"; };
+		21B441B21F467ADB00F92EA5 /* FindRadioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindRadioController.h; sourceTree = "<group>"; };
+		21B441B31F467ADB00F92EA5 /* FindRadioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindRadioController.m; sourceTree = "<group>"; };
+		21B441B51F467AEE00F92EA5 /* FindRankController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindRankController.h; sourceTree = "<group>"; };
+		21B441B61F467AEE00F92EA5 /* FindRankController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindRankController.m; sourceTree = "<group>"; };
+		21B441BB1F467FBD00F92EA5 /* FindAnchorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindAnchorController.h; sourceTree = "<group>"; };
+		21B441BC1F467FBD00F92EA5 /* FindAnchorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindAnchorController.m; sourceTree = "<group>"; };
+		21B441C01F46C9BE00F92EA5 /* XMLYBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYBaseRequest.h; sourceTree = "<group>"; };
+		21B441C11F46C9BE00F92EA5 /* XMLYBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYBaseRequest.m; sourceTree = "<group>"; };
 		2B9B8851101143BC4C7F1FB0 /* libPods-YJXMLYFM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YJXMLYFM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3EE86D3F371AC358B4F159 /* Pods-YJXMLYFM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJXMLYFM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YJXMLYFM/Pods-YJXMLYFM.debug.xcconfig"; sourceTree = "<group>"; };
 		DEF906DBD884B14B765247F6 /* Pods-YJXMLYFM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJXMLYFM.release.xcconfig"; path = "Pods/Target Support Files/Pods-YJXMLYFM/Pods-YJXMLYFM.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +151,12 @@
 			children = (
 				212050481F45601900367080 /* FindViewController.h */,
 				212050491F45601900367080 /* FindViewController.m */,
+				21B441AB1F467A5D00F92EA5 /* RecommendController */,
+				21B441A81F467A5D00F92EA5 /* CategoryController */,
+				21B441A91F467A5D00F92EA5 /* RadioController */,
+				21B441AA1F467A5D00F92EA5 /* RankController */,
+				21B441A71F467A5D00F92EA5 /* AnchorController */,
+				21B441A31F46789800F92EA5 /* BaseFindController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -212,6 +239,7 @@
 		2173F3C61F4197870092A877 /* YJXMLYFM */ = {
 			isa = PBXGroup;
 			children = (
+				21B441BE1F46C8F600F92EA5 /* HTTPRequest */,
 				212050451F455FEC00367080 /* Sections */,
 				21255A6F1F42E67D00295628 /* Resources */,
 				21255A6B1F428A2400295628 /* Root */,
@@ -252,6 +280,77 @@
 				2173F3EE1F4197880092A877 /* Info.plist */,
 			);
 			path = YJXMLYFMUITests;
+			sourceTree = "<group>";
+		};
+		21B441A31F46789800F92EA5 /* BaseFindController */ = {
+			isa = PBXGroup;
+			children = (
+				21B441A41F4678B800F92EA5 /* XMLYBaseFindController.h */,
+				21B441A51F4678B800F92EA5 /* XMLYBaseFindController.m */,
+			);
+			path = BaseFindController;
+			sourceTree = "<group>";
+		};
+		21B441A71F467A5D00F92EA5 /* AnchorController */ = {
+			isa = PBXGroup;
+			children = (
+				21B441BB1F467FBD00F92EA5 /* FindAnchorController.h */,
+				21B441BC1F467FBD00F92EA5 /* FindAnchorController.m */,
+			);
+			path = AnchorController;
+			sourceTree = "<group>";
+		};
+		21B441A81F467A5D00F92EA5 /* CategoryController */ = {
+			isa = PBXGroup;
+			children = (
+				21B441AF1F467ACD00F92EA5 /* FindCategoryController.h */,
+				21B441B01F467ACD00F92EA5 /* FindCategoryController.m */,
+			);
+			path = CategoryController;
+			sourceTree = "<group>";
+		};
+		21B441A91F467A5D00F92EA5 /* RadioController */ = {
+			isa = PBXGroup;
+			children = (
+				21B441B21F467ADB00F92EA5 /* FindRadioController.h */,
+				21B441B31F467ADB00F92EA5 /* FindRadioController.m */,
+			);
+			path = RadioController;
+			sourceTree = "<group>";
+		};
+		21B441AA1F467A5D00F92EA5 /* RankController */ = {
+			isa = PBXGroup;
+			children = (
+				21B441B51F467AEE00F92EA5 /* FindRankController.h */,
+				21B441B61F467AEE00F92EA5 /* FindRankController.m */,
+			);
+			path = RankController;
+			sourceTree = "<group>";
+		};
+		21B441AB1F467A5D00F92EA5 /* RecommendController */ = {
+			isa = PBXGroup;
+			children = (
+				21B441AC1F467AB300F92EA5 /* FindRecommendController.h */,
+				21B441AD1F467AB300F92EA5 /* FindRecommendController.m */,
+			);
+			path = RecommendController;
+			sourceTree = "<group>";
+		};
+		21B441BE1F46C8F600F92EA5 /* HTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				21B441BF1F46C91300F92EA5 /* HTTPBaseRequset */,
+			);
+			path = HTTPRequest;
+			sourceTree = "<group>";
+		};
+		21B441BF1F46C91300F92EA5 /* HTTPBaseRequset */ = {
+			isa = PBXGroup;
+			children = (
+				21B441C01F46C9BE00F92EA5 /* XMLYBaseRequest.h */,
+				21B441C11F46C9BE00F92EA5 /* XMLYBaseRequest.m */,
+			);
+			path = HTTPBaseRequset;
 			sourceTree = "<group>";
 		};
 		D4449ACB86E071686F2BD9A0 /* Frameworks */ = {
@@ -458,7 +557,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21B441B41F467ADB00F92EA5 /* FindRadioController.m in Sources */,
 				2173F3CF1F4197870092A877 /* ViewController.m in Sources */,
+				21B441AE1F467AB300F92EA5 /* FindRecommendController.m in Sources */,
+				21B441A61F4678B800F92EA5 /* XMLYBaseFindController.m in Sources */,
+				21B441B71F467AEE00F92EA5 /* FindRankController.m in Sources */,
+				21B441B11F467ACD00F92EA5 /* FindCategoryController.m in Sources */,
 				2173F3C91F4197870092A877 /* main.m in Sources */,
 				21255A691F4287C600295628 /* XMLYMacro.m in Sources */,
 				21255A661F4287A200295628 /* AppDelegate.m in Sources */,
@@ -466,6 +570,8 @@
 				2120504E1F45667D00367080 /* FindSubTitleView.m in Sources */,
 				21255A6E1F428A5200295628 /* RootController.m in Sources */,
 				2120504A1F45601900367080 /* FindViewController.m in Sources */,
+				21B441BD1F467FBD00F92EA5 /* FindAnchorController.m in Sources */,
+				21B441C21F46C9BE00F92EA5 /* XMLYBaseRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -76,12 +76,31 @@
 }
 
 
+- (void)transToIndex:(NSInteger)index{
+    if (index < 0 || index >self.titleButtonArray.count) {
+        return;
+    }
+    UIButton *button = self.titleButtonArray[index];
+    button.selected = YES;
+    for (UIButton *btn in self.titleButtonArray) {
+        if (btn == button) {
+            continue;
+        }
+        btn.selected = NO;
+    }
+    /** sliderview 动画 */
+    [UIView animateWithDuration:0.25 animations:^{
+        self.sliderView.frame = CGRectMake(CGRectGetMinX(button.frame)+button.frame.size.width/2-15, 38, 30, 2);
+    }];
+}
+
 - (NSMutableArray *)titleArray{
     if (!_titleArray) {
         _titleArray = [[NSMutableArray alloc]initWithObjects:@"推荐",@"分类",@"广播",@"榜单",@"主播", nil];
     }
     return _titleArray;
 }
+
 - (NSMutableArray *)titleButtonArray{
     if (!_titleButtonArray) {
         _titleButtonArray = [@[] mutableCopy];

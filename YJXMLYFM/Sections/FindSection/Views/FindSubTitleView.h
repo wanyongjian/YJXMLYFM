@@ -18,4 +18,6 @@
 @interface FindSubTitleView : UIView
 
 @property (nonatomic,weak) id<FindSubTitleViewDelegate> delegate;
+
+- (void)transToIndex:(NSInteger)index;
 @end
