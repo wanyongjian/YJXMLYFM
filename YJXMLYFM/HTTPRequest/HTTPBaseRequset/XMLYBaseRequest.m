@@ -13,7 +13,10 @@
 
 + (void)requestDataWithURL:(NSString *)url Paraments:(NSDictionary *)parament response:(void (^)(id))success failue:(void (^)(id))failue{
     
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+    config.timeoutIntervalForRequest = 30;
+    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:config];
+    
     [manager GET:url parameters:parament progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         success(responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

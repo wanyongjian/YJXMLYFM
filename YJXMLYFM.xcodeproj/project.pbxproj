@@ -15,6 +15,11 @@
 		21255A691F4287C600295628 /* XMLYMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 21255A681F4287C600295628 /* XMLYMacro.m */; };
 		21255A6E1F428A5200295628 /* RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21255A6D1F428A5200295628 /* RootController.m */; };
 		21255A711F42E67D00295628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21255A701F42E67D00295628 /* Assets.xcassets */; };
+		214B87FD1F4BE08900CD94F3 /* FindRecommendViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 214B87FC1F4BE08900CD94F3 /* FindRecommendViewModel.m */; };
+		214B88021F4BF9E000CD94F3 /* XMLYFindAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 214B88011F4BF9E000CD94F3 /* XMLYFindAPI.m */; };
+		214B88061F4C17B000CD94F3 /* XMLYBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 214B88051F4C17B000CD94F3 /* XMLYBaseModel.m */; };
+		214B88091F4C17D200CD94F3 /* XMLYFindRecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 214B88081F4C17D200CD94F3 /* XMLYFindRecommendModel.m */; };
+		214B880E1F4C290C00CD94F3 /* FindRecommedHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 214B880D1F4C290C00CD94F3 /* FindRecommedHeaderView.m */; };
 		2173F3C91F4197870092A877 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173F3C81F4197870092A877 /* main.m */; };
 		2173F3CF1F4197870092A877 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173F3CE1F4197870092A877 /* ViewController.m */; };
 		2173F3D21F4197870092A877 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2173F3D01F4197870092A877 /* Main.storyboard */; };
@@ -28,6 +33,7 @@
 		21B441B71F467AEE00F92EA5 /* FindRankController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B441B61F467AEE00F92EA5 /* FindRankController.m */; };
 		21B441BD1F467FBD00F92EA5 /* FindAnchorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B441BC1F467FBD00F92EA5 /* FindAnchorController.m */; };
 		21B441C21F46C9BE00F92EA5 /* XMLYBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B441C11F46C9BE00F92EA5 /* XMLYBaseRequest.m */; };
+		21C63A2B1F4AA9C600363108 /* XMLYFindFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C63A2A1F4AA9C600363108 /* XMLYFindFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +68,16 @@
 		21255A6C1F428A5200295628 /* RootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootController.h; sourceTree = "<group>"; };
 		21255A6D1F428A5200295628 /* RootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootController.m; sourceTree = "<group>"; };
 		21255A701F42E67D00295628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		214B87FB1F4BE08900CD94F3 /* FindRecommendViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindRecommendViewModel.h; sourceTree = "<group>"; };
+		214B87FC1F4BE08900CD94F3 /* FindRecommendViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindRecommendViewModel.m; sourceTree = "<group>"; };
+		214B88001F4BF9E000CD94F3 /* XMLYFindAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYFindAPI.h; sourceTree = "<group>"; };
+		214B88011F4BF9E000CD94F3 /* XMLYFindAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYFindAPI.m; sourceTree = "<group>"; };
+		214B88041F4C17B000CD94F3 /* XMLYBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYBaseModel.h; sourceTree = "<group>"; };
+		214B88051F4C17B000CD94F3 /* XMLYBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYBaseModel.m; sourceTree = "<group>"; };
+		214B88071F4C17D100CD94F3 /* XMLYFindRecommendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYFindRecommendModel.h; sourceTree = "<group>"; };
+		214B88081F4C17D200CD94F3 /* XMLYFindRecommendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYFindRecommendModel.m; sourceTree = "<group>"; };
+		214B880C1F4C290C00CD94F3 /* FindRecommedHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindRecommedHeaderView.h; sourceTree = "<group>"; };
+		214B880D1F4C290C00CD94F3 /* FindRecommedHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindRecommedHeaderView.m; sourceTree = "<group>"; };
 		2173F3C41F4197870092A877 /* YJXMLYFM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJXMLYFM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2173F3C81F4197870092A877 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2173F3CD1F4197870092A877 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -89,6 +105,8 @@
 		21B441BC1F467FBD00F92EA5 /* FindAnchorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindAnchorController.m; sourceTree = "<group>"; };
 		21B441C01F46C9BE00F92EA5 /* XMLYBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYBaseRequest.h; sourceTree = "<group>"; };
 		21B441C11F46C9BE00F92EA5 /* XMLYBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYBaseRequest.m; sourceTree = "<group>"; };
+		21C63A291F4AA9C600363108 /* XMLYFindFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYFindFactory.h; sourceTree = "<group>"; };
+		21C63A2A1F4AA9C600363108 /* XMLYFindFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYFindFactory.m; sourceTree = "<group>"; };
 		2B9B8851101143BC4C7F1FB0 /* libPods-YJXMLYFM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YJXMLYFM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3EE86D3F371AC358B4F159 /* Pods-YJXMLYFM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJXMLYFM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YJXMLYFM/Pods-YJXMLYFM.debug.xcconfig"; sourceTree = "<group>"; };
 		DEF906DBD884B14B765247F6 /* Pods-YJXMLYFM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJXMLYFM.release.xcconfig"; path = "Pods/Target Support Files/Pods-YJXMLYFM/Pods-YJXMLYFM.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +169,8 @@
 			children = (
 				212050481F45601900367080 /* FindViewController.h */,
 				212050491F45601900367080 /* FindViewController.m */,
+				21C63A291F4AA9C600363108 /* XMLYFindFactory.h */,
+				21C63A2A1F4AA9C600363108 /* XMLYFindFactory.m */,
 				21B441AB1F467A5D00F92EA5 /* RecommendController */,
 				21B441A81F467A5D00F92EA5 /* CategoryController */,
 				21B441A91F467A5D00F92EA5 /* RadioController */,
@@ -182,6 +202,7 @@
 		21255A641F4287A200295628 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				214B88031F4C179700CD94F3 /* XMLYBase */,
 				212050411F455E9400367080 /* XMLYCommonUI */,
 				21255A651F4287A200295628 /* XMLYMacro */,
 			);
@@ -212,6 +233,67 @@
 				21255A701F42E67D00295628 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		214B87F91F4BDCFD00CD94F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				214B88071F4C17D100CD94F3 /* XMLYFindRecommendModel.h */,
+				214B88081F4C17D200CD94F3 /* XMLYFindRecommendModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		214B87FA1F4BDCFD00CD94F3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				214B87FB1F4BE08900CD94F3 /* FindRecommendViewModel.h */,
+				214B87FC1F4BE08900CD94F3 /* FindRecommendViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		214B87FE1F4BF8F100CD94F3 /* XMLYFindSectionAPI */ = {
+			isa = PBXGroup;
+			children = (
+				214B87FF1F4BF99600CD94F3 /* FindAPI */,
+			);
+			path = XMLYFindSectionAPI;
+			sourceTree = "<group>";
+		};
+		214B87FF1F4BF99600CD94F3 /* FindAPI */ = {
+			isa = PBXGroup;
+			children = (
+				214B88001F4BF9E000CD94F3 /* XMLYFindAPI.h */,
+				214B88011F4BF9E000CD94F3 /* XMLYFindAPI.m */,
+			);
+			path = FindAPI;
+			sourceTree = "<group>";
+		};
+		214B88031F4C179700CD94F3 /* XMLYBase */ = {
+			isa = PBXGroup;
+			children = (
+				214B88041F4C17B000CD94F3 /* XMLYBaseModel.h */,
+				214B88051F4C17B000CD94F3 /* XMLYBaseModel.m */,
+			);
+			path = XMLYBase;
+			sourceTree = "<group>";
+		};
+		214B880A1F4C28E900CD94F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				214B880B1F4C28E900CD94F3 /* FindRecommendHeader */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		214B880B1F4C28E900CD94F3 /* FindRecommendHeader */ = {
+			isa = PBXGroup;
+			children = (
+				214B880C1F4C290C00CD94F3 /* FindRecommedHeaderView.h */,
+				214B880D1F4C290C00CD94F3 /* FindRecommedHeaderView.m */,
+			);
+			path = FindRecommendHeader;
 			sourceTree = "<group>";
 		};
 		2173F3BB1F4197870092A877 = {
@@ -332,6 +414,9 @@
 			children = (
 				21B441AC1F467AB300F92EA5 /* FindRecommendController.h */,
 				21B441AD1F467AB300F92EA5 /* FindRecommendController.m */,
+				214B880A1F4C28E900CD94F3 /* View */,
+				214B87F91F4BDCFD00CD94F3 /* Model */,
+				214B87FA1F4BDCFD00CD94F3 /* ViewModel */,
 			);
 			path = RecommendController;
 			sourceTree = "<group>";
@@ -339,6 +424,7 @@
 		21B441BE1F46C8F600F92EA5 /* HTTPRequest */ = {
 			isa = PBXGroup;
 			children = (
+				214B87FE1F4BF8F100CD94F3 /* XMLYFindSectionAPI */,
 				21B441BF1F46C91300F92EA5 /* HTTPBaseRequset */,
 			);
 			path = HTTPRequest;
@@ -557,12 +643,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				214B880E1F4C290C00CD94F3 /* FindRecommedHeaderView.m in Sources */,
 				21B441B41F467ADB00F92EA5 /* FindRadioController.m in Sources */,
+				214B88091F4C17D200CD94F3 /* XMLYFindRecommendModel.m in Sources */,
 				2173F3CF1F4197870092A877 /* ViewController.m in Sources */,
 				21B441AE1F467AB300F92EA5 /* FindRecommendController.m in Sources */,
+				214B88021F4BF9E000CD94F3 /* XMLYFindAPI.m in Sources */,
 				21B441A61F4678B800F92EA5 /* XMLYBaseFindController.m in Sources */,
 				21B441B71F467AEE00F92EA5 /* FindRankController.m in Sources */,
 				21B441B11F467ACD00F92EA5 /* FindCategoryController.m in Sources */,
+				214B88061F4C17B000CD94F3 /* XMLYBaseModel.m in Sources */,
 				2173F3C91F4197870092A877 /* main.m in Sources */,
 				21255A691F4287C600295628 /* XMLYMacro.m in Sources */,
 				21255A661F4287A200295628 /* AppDelegate.m in Sources */,
@@ -570,8 +660,10 @@
 				2120504E1F45667D00367080 /* FindSubTitleView.m in Sources */,
 				21255A6E1F428A5200295628 /* RootController.m in Sources */,
 				2120504A1F45601900367080 /* FindViewController.m in Sources */,
+				214B87FD1F4BE08900CD94F3 /* FindRecommendViewModel.m in Sources */,
 				21B441BD1F467FBD00F92EA5 /* FindAnchorController.m in Sources */,
 				21B441C21F46C9BE00F92EA5 /* XMLYBaseRequest.m in Sources */,
+				21C63A2B1F4AA9C600363108 /* XMLYFindFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

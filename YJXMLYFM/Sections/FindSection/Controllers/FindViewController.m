@@ -8,12 +8,8 @@
 
 #import "FindViewController.h"
 #import "FindSubTitleView.h"
-
-#import "FindRecommendController.h"
-#import "FindCategoryController.h"
-#import "FindRadioController.h"
-#import "FindRankController.h"
-#import "FindAnchorController.h"
+#import "XMLYFindFactory.h"
+#import "XMLYFindAPI.h"
 
 
 @interface FindViewController () <FindSubTitleViewDelegate,UIPageViewControllerDelegate,UIPageViewControllerDataSource>
@@ -23,6 +19,8 @@
 @property (nonatomic, strong) NSMutableArray *controllers;
 /** UIPageviewcontroller*/
 @property (nonatomic, strong) UIPageViewController *pageViewController;
+
+@property (nonatomic, strong) NSMutableArray *subTitleArray;
 @end
 
 
@@ -37,6 +35,10 @@
     [self.view addSubview:self.pageViewController.view];
     [self addChildViewController:self.pageViewController];
     [self layoutViews];
+    
+    [XMLYFindAPI requestWithRecommend:^(id response) {
+        
+    }];
 }
 
 - (void)layoutViews{
@@ -99,17 +101,10 @@
     if (!_controllers) {
         _controllers = [@[] mutableCopy];
         
-        FindRecommendController *recommendCon = [[FindRecommendController alloc]init];
-        [_controllers addObject:recommendCon];
-        FindCategoryController *categoryCon = [[FindCategoryController alloc]init];
-        [_controllers addObject:categoryCon];
-        FindRadioController *radioCon = [[FindRadioController alloc]init];
-        [_controllers addObject:radioCon];
-        FindRankController *rankCon = [[FindRankController alloc]init];
-        [_controllers addObject:rankCon];
-        FindAnchorController *anchorCon = [[FindAnchorController alloc]init];
-        [_controllers addObject:anchorCon];
-        
+        for (NSInteger i=0; i<self.subTitleArray.count; i++) {
+            XMLYBaseController *controller = [XMLYFindFactory findSubtitleControllerWithIdentifier:self.subTitleArray[i]];
+            [_controllers addObject:controller];
+        }
     }
     return _controllers;
 }
@@ -118,5 +113,12 @@
         _titleView  = [[FindSubTitleView alloc]initWithFrame:CGRectMake(0, 64, kScreenWidth, 40)];
     }
     return _titleView;
+}
+
+- (NSMutableArray *)subTitleArray{
+    if (!_subTitleArray) {
+        _subTitleArray = [[NSMutableArray alloc]initWithObjects:@"推荐",@"分类",@"广播",@"榜单",@"主播", nil];
+    }
+    return _subTitleArray;
 }
 @end

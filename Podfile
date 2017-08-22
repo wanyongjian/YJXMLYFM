@@ -5,4 +5,6 @@ target 'YJXMLYFM' do
 pod 'AFNetworking'
 pod 'Masonry'
 pod 'ReactiveCocoa','2.5'
+pod 'MJExtension'
+pod 'SDCycleScrollView'
 end
