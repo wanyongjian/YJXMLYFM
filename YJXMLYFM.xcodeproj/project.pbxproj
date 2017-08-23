@@ -26,6 +26,11 @@
 		2173F3D71F4197870092A877 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2173F3D51F4197870092A877 /* LaunchScreen.storyboard */; };
 		2173F3E21F4197880092A877 /* YJXMLYFMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173F3E11F4197880092A877 /* YJXMLYFMTests.m */; };
 		2173F3ED1F4197880092A877 /* YJXMLYFMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173F3EC1F4197880092A877 /* YJXMLYFMUITests.m */; };
+		219B6BA21F4D11400020CD98 /* XMLYFindHotGuessModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 219B6BA11F4D11400020CD98 /* XMLYFindHotGuessModel.m */; };
+		219B6BA51F4D23750020CD98 /* HeaderIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 219B6BA41F4D23750020CD98 /* HeaderIconView.m */; };
+		219B6BA91F4D685F0020CD98 /* FindBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 219B6BA81F4D685F0020CD98 /* FindBaseCell.m */; };
+		219B6BAD1F4D69B80020CD98 /* FindCellFee.m in Sources */ = {isa = PBXBuildFile; fileRef = 219B6BAC1F4D69B80020CD98 /* FindCellFee.m */; };
+		219B6BB01F4D7CF70020CD98 /* FindCellFeeItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 219B6BAF1F4D7CF70020CD98 /* FindCellFeeItemView.m */; };
 		21B441A61F4678B800F92EA5 /* XMLYBaseFindController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B441A51F4678B800F92EA5 /* XMLYBaseFindController.m */; };
 		21B441AE1F467AB300F92EA5 /* FindRecommendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B441AD1F467AB300F92EA5 /* FindRecommendController.m */; };
 		21B441B11F467ACD00F92EA5 /* FindCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B441B01F467ACD00F92EA5 /* FindCategoryController.m */; };
@@ -91,6 +96,16 @@
 		2173F3E81F4197880092A877 /* YJXMLYFMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YJXMLYFMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2173F3EC1F4197880092A877 /* YJXMLYFMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJXMLYFMUITests.m; sourceTree = "<group>"; };
 		2173F3EE1F4197880092A877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		219B6BA01F4D11400020CD98 /* XMLYFindHotGuessModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYFindHotGuessModel.h; sourceTree = "<group>"; };
+		219B6BA11F4D11400020CD98 /* XMLYFindHotGuessModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYFindHotGuessModel.m; sourceTree = "<group>"; };
+		219B6BA31F4D23750020CD98 /* HeaderIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderIconView.h; sourceTree = "<group>"; };
+		219B6BA41F4D23750020CD98 /* HeaderIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderIconView.m; sourceTree = "<group>"; };
+		219B6BA71F4D685F0020CD98 /* FindBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindBaseCell.h; sourceTree = "<group>"; };
+		219B6BA81F4D685F0020CD98 /* FindBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindBaseCell.m; sourceTree = "<group>"; };
+		219B6BAB1F4D69B80020CD98 /* FindCellFee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindCellFee.h; sourceTree = "<group>"; };
+		219B6BAC1F4D69B80020CD98 /* FindCellFee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindCellFee.m; sourceTree = "<group>"; };
+		219B6BAE1F4D7CF70020CD98 /* FindCellFeeItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindCellFeeItemView.h; sourceTree = "<group>"; };
+		219B6BAF1F4D7CF70020CD98 /* FindCellFeeItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindCellFeeItemView.m; sourceTree = "<group>"; };
 		21B441A41F4678B800F92EA5 /* XMLYBaseFindController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYBaseFindController.h; sourceTree = "<group>"; };
 		21B441A51F4678B800F92EA5 /* XMLYBaseFindController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYBaseFindController.m; sourceTree = "<group>"; };
 		21B441AC1F467AB300F92EA5 /* FindRecommendController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindRecommendController.h; sourceTree = "<group>"; };
@@ -240,6 +255,8 @@
 			children = (
 				214B88071F4C17D100CD94F3 /* XMLYFindRecommendModel.h */,
 				214B88081F4C17D200CD94F3 /* XMLYFindRecommendModel.m */,
+				219B6BA01F4D11400020CD98 /* XMLYFindHotGuessModel.h */,
+				219B6BA11F4D11400020CD98 /* XMLYFindHotGuessModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -282,6 +299,8 @@
 		214B880A1F4C28E900CD94F3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				219B6BAA1F4D69A30020CD98 /* FindCellFee */,
+				219B6BA61F4D674A0020CD98 /* FindBaseCell */,
 				214B880B1F4C28E900CD94F3 /* FindRecommendHeader */,
 			);
 			path = View;
@@ -292,6 +311,8 @@
 			children = (
 				214B880C1F4C290C00CD94F3 /* FindRecommedHeaderView.h */,
 				214B880D1F4C290C00CD94F3 /* FindRecommedHeaderView.m */,
+				219B6BA31F4D23750020CD98 /* HeaderIconView.h */,
+				219B6BA41F4D23750020CD98 /* HeaderIconView.m */,
 			);
 			path = FindRecommendHeader;
 			sourceTree = "<group>";
@@ -362,6 +383,26 @@
 				2173F3EE1F4197880092A877 /* Info.plist */,
 			);
 			path = YJXMLYFMUITests;
+			sourceTree = "<group>";
+		};
+		219B6BA61F4D674A0020CD98 /* FindBaseCell */ = {
+			isa = PBXGroup;
+			children = (
+				219B6BA71F4D685F0020CD98 /* FindBaseCell.h */,
+				219B6BA81F4D685F0020CD98 /* FindBaseCell.m */,
+			);
+			path = FindBaseCell;
+			sourceTree = "<group>";
+		};
+		219B6BAA1F4D69A30020CD98 /* FindCellFee */ = {
+			isa = PBXGroup;
+			children = (
+				219B6BAB1F4D69B80020CD98 /* FindCellFee.h */,
+				219B6BAC1F4D69B80020CD98 /* FindCellFee.m */,
+				219B6BAE1F4D7CF70020CD98 /* FindCellFeeItemView.h */,
+				219B6BAF1F4D7CF70020CD98 /* FindCellFeeItemView.m */,
+			);
+			path = FindCellFee;
 			sourceTree = "<group>";
 		};
 		21B441A31F46789800F92EA5 /* BaseFindController */ = {
@@ -648,19 +689,24 @@
 				214B88091F4C17D200CD94F3 /* XMLYFindRecommendModel.m in Sources */,
 				2173F3CF1F4197870092A877 /* ViewController.m in Sources */,
 				21B441AE1F467AB300F92EA5 /* FindRecommendController.m in Sources */,
+				219B6BA91F4D685F0020CD98 /* FindBaseCell.m in Sources */,
 				214B88021F4BF9E000CD94F3 /* XMLYFindAPI.m in Sources */,
 				21B441A61F4678B800F92EA5 /* XMLYBaseFindController.m in Sources */,
 				21B441B71F467AEE00F92EA5 /* FindRankController.m in Sources */,
+				219B6BB01F4D7CF70020CD98 /* FindCellFeeItemView.m in Sources */,
 				21B441B11F467ACD00F92EA5 /* FindCategoryController.m in Sources */,
 				214B88061F4C17B000CD94F3 /* XMLYBaseModel.m in Sources */,
 				2173F3C91F4197870092A877 /* main.m in Sources */,
 				21255A691F4287C600295628 /* XMLYMacro.m in Sources */,
 				21255A661F4287A200295628 /* AppDelegate.m in Sources */,
 				212050441F455EB100367080 /* XMLYBaseController.m in Sources */,
+				219B6BA21F4D11400020CD98 /* XMLYFindHotGuessModel.m in Sources */,
 				2120504E1F45667D00367080 /* FindSubTitleView.m in Sources */,
+				219B6BAD1F4D69B80020CD98 /* FindCellFee.m in Sources */,
 				21255A6E1F428A5200295628 /* RootController.m in Sources */,
 				2120504A1F45601900367080 /* FindViewController.m in Sources */,
 				214B87FD1F4BE08900CD94F3 /* FindRecommendViewModel.m in Sources */,
+				219B6BA51F4D23750020CD98 /* HeaderIconView.m in Sources */,
 				21B441BD1F467FBD00F92EA5 /* FindAnchorController.m in Sources */,
 				21B441C21F46C9BE00F92EA5 /* XMLYBaseRequest.m in Sources */,
 				21C63A2B1F4AA9C600363108 /* XMLYFindFactory.m in Sources */,

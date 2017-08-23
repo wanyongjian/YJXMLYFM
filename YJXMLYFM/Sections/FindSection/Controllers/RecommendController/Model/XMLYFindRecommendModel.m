@@ -16,3 +16,15 @@
 
 @implementation XMLYFocusImagesDetailModel
 @end
+
+@implementation XMLYSpecialColumnModel
+@end
+
+@implementation XMLYSpecialColumnDetailModel
+@end
+
+@implementation XMLYEditorRecommendAlbumsModel
+@end
+
+@implementation XMLYEditorRecommendAlbumsDetailModel
+@end

@@ -33,9 +33,28 @@
         return nil;
     }];
     
-   [[RACSignal combineLatest:@[signalRecommend]] subscribeNext:^(id x) {
+    RACSignal *signalHotAndGuss = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+       @strongify(self)
+        [self requestHotAndGuess:^{
+            [subscriber sendNext:nil];
+        }];
+        return nil;
+    }];
+    
+   [[RACSignal combineLatest:@[signalRecommend,signalHotAndGuss]] subscribeNext:^(id x) {
        [self.updateContentSignal sendNext:nil];
    }];
+}
+
+- (void)requestHotAndGuess:(void(^)())complete{
+    [XMLYFindAPI requestWithHotAndGuess:^(id response) {
+       
+        [XMLYHotDiscoveryColumnsModel mj_setupObjectClassInArray:^NSDictionary *{
+            return @{@"list":@"XMLYHotDiscoveryColumnsDetailModel"};
+        }];
+        self.hotGuessModel =  [XMLYFindHotGuessModel mj_objectWithKeyValues:response];
+        complete();
+    }];
 }
 
 - (void)requestRecommend:(void(^)())complete{
@@ -44,8 +63,17 @@
         [XMLYFocusImagesModel mj_setupObjectClassInArray:^NSDictionary *{
             return @{@"list":@"XMLYFocusImagesDetailModel"};
         }];
+        
+        [XMLYSpecialColumnModel mj_setupObjectClassInArray:^NSDictionary *{
+            return @{@"list":@"XMLYSpecialColumnDetailModel"};
+        }];
+        
+        [XMLYEditorRecommendAlbumsModel mj_setupObjectClassInArray:^NSDictionary *{
+            return @{@"list":@"XMLYEditorRecommendAlbumsDetailModel"};
+        }];
         self.recommendModel = [XMLYFindRecommendModel mj_objectWithKeyValues:response];
         complete();
     }];
 }
+
 @end

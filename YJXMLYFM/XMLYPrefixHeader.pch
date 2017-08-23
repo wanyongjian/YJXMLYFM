@@ -17,5 +17,7 @@
 #import "AFNetworking.h"
 #import "ReactiveCocoa.h"
 #import "MJExtension.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+
 
 #endif /* XMLYPrefixHeader_pch */

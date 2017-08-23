@@ -12,4 +12,5 @@
 
 
 @property (nonatomic, strong) NSMutableArray *imgUrlArray;
+@property (nonatomic, strong) NSMutableArray *hotArray;
 @end

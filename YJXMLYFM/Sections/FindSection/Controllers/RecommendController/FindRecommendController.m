@@ -10,10 +10,16 @@
 #import "FindRecommendViewModel.h"
 #import "FindRecommedHeaderView.h"
 
+#import "FindCellFee.h"
+
+
+#define kSectionEditCommend 0
+
+#define kSectionEditCommendHeight 230
+
 @interface FindRecommendController () <UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) UIView *headView;
 @property (nonatomic, strong) FindRecommendViewModel *viewModel;
 @property (nonatomic, strong) FindRecommedHeaderView *headerView;
 @end
@@ -32,6 +38,9 @@
     [self.viewModel.updateContentSignal subscribeNext:^(id x) {
         NSLog(@"===== %@",self.viewModel.recommendModel.focusImages.list);
         self.headerView.imgUrlArray = self.viewModel.recommendModel.focusImages.list;
+        self.headerView.hotArray = self.viewModel.hotGuessModel.discoveryColumns.list;
+        
+        [self.tableView reloadData];
     }];
     
     [self.viewModel refreshDataSource];
@@ -46,6 +55,12 @@
     }];
 }
 #pragma mark - tableview代理方法
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == kSectionEditCommend) {
+        return kSectionEditCommendHeight;
+    }
+    return 50;
+}
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 8;
 }
@@ -55,13 +70,26 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *useID = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:useID];
-    if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:useID];
+    if (indexPath.section == kSectionEditCommend) {
+        static NSString *useID = @"editcell";
+        FindCellFee *cell = [tableView dequeueReusableCellWithIdentifier:useID];
+        if (!cell) {
+            cell = [[FindCellFee alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:useID];
+        }
+        cell.recommendModel = self.viewModel.recommendModel.editorRecommendAlbums;
+        return cell;
+    }else{
+        static NSString *useID = @"cell";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:useID];
+        if (!cell) {
+            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:useID];
+        }
+            return cell;
     }
-    return cell;
+    
+    return [[UITableViewCell alloc]init];
 }
+
 #pragma mark - lazyload
 - (UITableView *)tableView{
     if (!_tableView) {
