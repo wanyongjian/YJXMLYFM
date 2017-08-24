@@ -39,6 +39,9 @@
 		21B441BD1F467FBD00F92EA5 /* FindAnchorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B441BC1F467FBD00F92EA5 /* FindAnchorController.m */; };
 		21B441C21F46C9BE00F92EA5 /* XMLYBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B441C11F46C9BE00F92EA5 /* XMLYBaseRequest.m */; };
 		21C63A2B1F4AA9C600363108 /* XMLYFindFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C63A2A1F4AA9C600363108 /* XMLYFindFactory.m */; };
+		21CCFD1F1F4E6262002C399F /* XMLYFindLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CCFD1E1F4E6262002C399F /* XMLYFindLiveModel.m */; };
+		21CCFD221F4E64C9002C399F /* FindCellLive.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CCFD211F4E64C9002C399F /* FindCellLive.m */; };
+		21CCFD251F4ECFEE002C399F /* FindSpecialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CCFD241F4ECFEE002C399F /* FindSpecialCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +125,12 @@
 		21B441C11F46C9BE00F92EA5 /* XMLYBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYBaseRequest.m; sourceTree = "<group>"; };
 		21C63A291F4AA9C600363108 /* XMLYFindFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYFindFactory.h; sourceTree = "<group>"; };
 		21C63A2A1F4AA9C600363108 /* XMLYFindFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYFindFactory.m; sourceTree = "<group>"; };
+		21CCFD1D1F4E6262002C399F /* XMLYFindLiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYFindLiveModel.h; sourceTree = "<group>"; };
+		21CCFD1E1F4E6262002C399F /* XMLYFindLiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYFindLiveModel.m; sourceTree = "<group>"; };
+		21CCFD201F4E64C9002C399F /* FindCellLive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindCellLive.h; sourceTree = "<group>"; };
+		21CCFD211F4E64C9002C399F /* FindCellLive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindCellLive.m; sourceTree = "<group>"; };
+		21CCFD231F4ECFEE002C399F /* FindSpecialCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindSpecialCell.h; sourceTree = "<group>"; };
+		21CCFD241F4ECFEE002C399F /* FindSpecialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindSpecialCell.m; sourceTree = "<group>"; };
 		2B9B8851101143BC4C7F1FB0 /* libPods-YJXMLYFM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YJXMLYFM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3EE86D3F371AC358B4F159 /* Pods-YJXMLYFM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJXMLYFM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YJXMLYFM/Pods-YJXMLYFM.debug.xcconfig"; sourceTree = "<group>"; };
 		DEF906DBD884B14B765247F6 /* Pods-YJXMLYFM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJXMLYFM.release.xcconfig"; path = "Pods/Target Support Files/Pods-YJXMLYFM/Pods-YJXMLYFM.release.xcconfig"; sourceTree = "<group>"; };
@@ -257,6 +266,8 @@
 				214B88081F4C17D200CD94F3 /* XMLYFindRecommendModel.m */,
 				219B6BA01F4D11400020CD98 /* XMLYFindHotGuessModel.h */,
 				219B6BA11F4D11400020CD98 /* XMLYFindHotGuessModel.m */,
+				21CCFD1D1F4E6262002C399F /* XMLYFindLiveModel.h */,
+				21CCFD1E1F4E6262002C399F /* XMLYFindLiveModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -399,6 +410,10 @@
 			children = (
 				219B6BAB1F4D69B80020CD98 /* FindCellFee.h */,
 				219B6BAC1F4D69B80020CD98 /* FindCellFee.m */,
+				21CCFD201F4E64C9002C399F /* FindCellLive.h */,
+				21CCFD211F4E64C9002C399F /* FindCellLive.m */,
+				21CCFD231F4ECFEE002C399F /* FindSpecialCell.h */,
+				21CCFD241F4ECFEE002C399F /* FindSpecialCell.m */,
 				219B6BAE1F4D7CF70020CD98 /* FindCellFeeItemView.h */,
 				219B6BAF1F4D7CF70020CD98 /* FindCellFeeItemView.m */,
 			);
@@ -694,9 +709,11 @@
 				21B441A61F4678B800F92EA5 /* XMLYBaseFindController.m in Sources */,
 				21B441B71F467AEE00F92EA5 /* FindRankController.m in Sources */,
 				219B6BB01F4D7CF70020CD98 /* FindCellFeeItemView.m in Sources */,
+				21CCFD1F1F4E6262002C399F /* XMLYFindLiveModel.m in Sources */,
 				21B441B11F467ACD00F92EA5 /* FindCategoryController.m in Sources */,
 				214B88061F4C17B000CD94F3 /* XMLYBaseModel.m in Sources */,
 				2173F3C91F4197870092A877 /* main.m in Sources */,
+				21CCFD251F4ECFEE002C399F /* FindSpecialCell.m in Sources */,
 				21255A691F4287C600295628 /* XMLYMacro.m in Sources */,
 				21255A661F4287A200295628 /* AppDelegate.m in Sources */,
 				212050441F455EB100367080 /* XMLYBaseController.m in Sources */,
@@ -709,6 +726,7 @@
 				219B6BA51F4D23750020CD98 /* HeaderIconView.m in Sources */,
 				21B441BD1F467FBD00F92EA5 /* FindAnchorController.m in Sources */,
 				21B441C21F46C9BE00F92EA5 /* XMLYBaseRequest.m in Sources */,
+				21CCFD221F4E64C9002C399F /* FindCellLive.m in Sources */,
 				21C63A2B1F4AA9C600363108 /* XMLYFindFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

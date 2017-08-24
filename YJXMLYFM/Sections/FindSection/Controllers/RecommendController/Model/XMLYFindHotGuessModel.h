@@ -14,6 +14,9 @@
 @property (nonatomic,assign) NSInteger ret;
 @property (nonatomic, copy) NSString *msg;
 @property (nonatomic, strong) XMLYHotDiscoveryColumnsModel *discoveryColumns;
+@property (nonatomic, strong) XMLYEditorRecommendAlbumsModel *guess;
+@property (nonatomic, strong) XMLYEditorRecommendAlbumsModel *cityColumn;
+@property (nonatomic, strong) XMLYEditorRecommendAlbumsModel *hotRecommends;
 @end
 
 

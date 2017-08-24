@@ -43,23 +43,23 @@
     _recommendModel = recommendModel;
     self.titleLabel.text = recommendModel.title;
     
-    if (recommendModel.list.count != 3) {
-        return;
-    }
+//    if (recommendModel.list.count != 3) {
+//        return;
+//    }
     for (NSInteger i=0; i<recommendModel.list.count; i++) {
         XMLYEditorRecommendAlbumsDetailModel *model = recommendModel.list[i];
         if (i==0) {
             [self.leftItemView.imageView sd_setImageWithURL:[NSURL URLWithString:model.coverMiddle] placeholderImage:[UIImage imageNamed:@"find_usercover"]];
             self.leftItemView.titleLabel.text = model.intro;
-            self.leftItemView.authorLabel.text = model.tags;
+            self.leftItemView.authorLabel.text = model.title;
         }else if (i==1){
             [self.middleItemView.imageView sd_setImageWithURL:[NSURL URLWithString:model.coverMiddle] placeholderImage:[UIImage imageNamed:@"find_usercover"]];
             self.middleItemView.titleLabel.text = model.intro;
-            self.middleItemView.authorLabel.text = model.tags;
+            self.middleItemView.authorLabel.text = model.title;
         }else if (i==2){
             [self.rightItemView.imageView sd_setImageWithURL:[NSURL URLWithString:model.coverMiddle] placeholderImage:[UIImage imageNamed:@"find_usercover"]];
             self.rightItemView.titleLabel.text = model.intro;
-            self.rightItemView.authorLabel.text = model.tags;
+            self.rightItemView.authorLabel.text = model.title;
         }
     }
 }

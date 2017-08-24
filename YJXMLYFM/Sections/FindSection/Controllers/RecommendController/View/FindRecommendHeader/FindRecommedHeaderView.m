@@ -9,7 +9,6 @@
 #import "FindRecommedHeaderView.h"
 #import "XMLYFindRecommendModel.h"
 #import "XMLYFindHotGuessModel.h"
-#import "SDCycleScrollView.h"
 #import "HeaderIconView.h"
 
 @interface FindRecommedHeaderView () <SDCycleScrollViewDelegate>
@@ -42,6 +41,7 @@
         _scrollHotView.showsHorizontalScrollIndicator = NO;
         _scrollHotView.pagingEnabled = NO;
         _scrollHotView.backgroundColor = [UIColor whiteColor];
+        
     }
     return _scrollHotView;
 }

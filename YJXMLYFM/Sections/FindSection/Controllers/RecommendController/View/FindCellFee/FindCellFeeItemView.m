@@ -42,7 +42,7 @@
     
     [_authorLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(15);
-        make.left.mas_equalTo(_playIconImgview.mas_left).offset(5);
+        make.left.mas_equalTo(_playIconImgview.mas_right).offset(5);
         make.right.mas_equalTo(_imageView.mas_right);
         make.centerY.mas_equalTo(_playIconImgview.mas_centerY);
     }];

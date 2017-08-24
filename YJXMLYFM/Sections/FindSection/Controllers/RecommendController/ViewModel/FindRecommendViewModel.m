@@ -41,7 +41,15 @@
         return nil;
     }];
     
-   [[RACSignal combineLatest:@[signalRecommend,signalHotAndGuss]] subscribeNext:^(id x) {
+    RACSignal *signalLive = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        @strongify(self);
+        [self requestLive:^{
+            [subscriber sendNext:nil];
+        }];
+        return nil;
+    }];
+    
+   [[RACSignal combineLatest:@[signalRecommend,signalHotAndGuss,signalLive]] subscribeNext:^(id x) {
        [self.updateContentSignal sendNext:nil];
    }];
 }
@@ -52,6 +60,10 @@
         [XMLYHotDiscoveryColumnsModel mj_setupObjectClassInArray:^NSDictionary *{
             return @{@"list":@"XMLYHotDiscoveryColumnsDetailModel"};
         }];
+        [XMLYEditorRecommendAlbumsModel mj_setupObjectClassInArray:^NSDictionary *{
+            return @{@"list":@"XMLYEditorRecommendAlbumsDetailModel"};
+        }];
+        
         self.hotGuessModel =  [XMLYFindHotGuessModel mj_objectWithKeyValues:response];
         complete();
     }];
@@ -76,4 +88,13 @@
     }];
 }
 
+- (void)requestLive:(void(^)())complete{
+    [XMLYFindAPI requestWithLiveRecommend:^(id response) {
+        [XMLYFindLiveModel mj_setupObjectClassInArray:^NSDictionary *{
+            return @{@"data":@"XMLYFindLiveDetailModel"};
+        }];
+        self.liveModel = [XMLYFindLiveModel mj_objectWithKeyValues:response];
+        complete();
+    }];
+}
 @end

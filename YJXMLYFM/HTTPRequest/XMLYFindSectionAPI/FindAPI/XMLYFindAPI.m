@@ -12,7 +12,9 @@
 
 #define kHotAndGuessAPI   @"http://mobile.ximalaya.com/mobile/discovery/v2/recommend/hotAndGuess?code=43_110000_1100&device=iPhone&version=5.4.21"
 
+#define kLiveRecommendAPI @"http://live.ximalaya.com/live-activity-web/v3/activity/recommend"
 
+#define kRecomBannerAPI   @"http://adse.ximalaya.com/ting?appid=0&device=iPhone&name=find_banner&network=WIFI&operator=3&scale=2&version=5.4.21"
 
 
 
@@ -29,6 +31,14 @@
 
 + (void)requestWithHotAndGuess:(void (^)(id))complete{
     [XMLYBaseRequest requestDataWithURL:kHotAndGuessAPI Paraments:nil response:^(id success) {
+        complete(success);
+    } failue:^(id failue) {
+        
+    }];
+}
+
++ (void)requestWithLiveRecommend:(void (^)(id))complete{
+    [XMLYBaseRequest requestDataWithURL:kLiveRecommendAPI Paraments:nil response:^(id success) {
         complete(success);
     } failue:^(id failue) {
         

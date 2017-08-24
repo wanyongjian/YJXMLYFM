@@ -23,8 +23,3 @@
 @implementation XMLYSpecialColumnDetailModel
 @end
 
-@implementation XMLYEditorRecommendAlbumsModel
-@end
-
-@implementation XMLYEditorRecommendAlbumsDetailModel
-@end

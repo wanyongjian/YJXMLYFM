@@ -14,4 +14,6 @@
 + (void)requestWithRecommend:(void(^)(id response))complete;
 
 + (void)requestWithHotAndGuess:(void(^)(id response))complete;
+
++ (void)requestWithLiveRecommend:(void(^)(id response))complete;
 @end

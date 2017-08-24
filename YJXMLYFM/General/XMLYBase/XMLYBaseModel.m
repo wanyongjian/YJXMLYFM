@@ -11,3 +11,9 @@
 @implementation XMLYBaseModel
 
 @end
+
+@implementation XMLYEditorRecommendAlbumsModel
+@end
+
+@implementation XMLYEditorRecommendAlbumsDetailModel
+@end
