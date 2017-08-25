@@ -7,7 +7,7 @@
 //
 
 #import "XMLYBaseModel.h"
-@class XMLYHotMemberModel,XMLYHotMemberDetailModel,XMLYHotRecommendsModel,XMLYHotRecommendsDetailModel,XMLYHotCityColumnModel,XMLYHotCityColumnDetailModel,XMLYHotGuessModel,XMLYHotGuessDetailModel,XMLYHotDiscoveryColumnsModel,XMLYHotDiscoveryColumnsDetailModel;
+@class XMLYHotMemberModel,XMLYHotMemberDetailModel,XMLYHotRecommendsModel,XMLYHotRecommendsDetailModel,XMLYHotCityColumnModel,XMLYHotCityColumnDetailModel,XMLYHotGuessModel,XMLYHotGuessDetailModel,XMLYHotDiscoveryColumnsModel,XMLYHotDiscoveryColumnsDetailModel,XMLYHotRecommendModel,XMLYHotRecommendDetailModel;
 
 @interface XMLYFindHotGuessModel : XMLYBaseModel
 
@@ -16,7 +16,7 @@
 @property (nonatomic, strong) XMLYHotDiscoveryColumnsModel *discoveryColumns;
 @property (nonatomic, strong) XMLYEditorRecommendAlbumsModel *guess;
 @property (nonatomic, strong) XMLYEditorRecommendAlbumsModel *cityColumn;
-@property (nonatomic, strong) XMLYEditorRecommendAlbumsModel *hotRecommends;
+@property (nonatomic, strong) XMLYHotRecommendModel *hotRecommends;
 @end
 
 
@@ -39,5 +39,27 @@
 @property (nonatomic, copy) NSString *coverPath;
 @property (nonatomic, copy) NSString *sharePic;
 @property (nonatomic,assign) NSInteger contentUpdatedAt;
-
 @end
+
+@interface XMLYHotRecommendModel : XMLYBaseModel
+@property (nonatomic,assign) NSInteger ret;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, strong) NSMutableArray <XMLYHotRecommendDetailModel*> *list;
+@end
+
+@interface XMLYHotRecommendDetailModel : XMLYBaseModel
+@property (nonatomic,assign) NSInteger categoryId;
+@property (nonatomic,assign) NSInteger categoryType;
+@property (nonatomic,assign) NSInteger count;
+@property (nonatomic,assign) NSInteger hasMore;
+@property (nonatomic,assign) NSInteger isPaid;
+@property (nonatomic,assign) NSInteger filterSupported;
+@property (nonatomic,assign) NSInteger isFinished;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, strong) NSMutableArray<XMLYEditorRecommendAlbumsDetailModel*> *list;
+@end
+
+
+
+
+

@@ -10,20 +10,21 @@
 #import "FindRecommendViewModel.h"
 #import "FindRecommedHeaderView.h"
 
-#import "FindCellFee.h"
-#import "FindCellLive.h"
-#import "FindSpecialCell.h"
+#import "XMLYFindCellFactory.h"
 
 
-#define kSectionEditCommend 0 //小编推荐
-#define kSectionLive 1  //直播
-#define kSectionGuess 2 //猜你喜欢
-#define kSectionCityColumn 3 //城市歌单
-#define kSectionSpecial 4 //精品歌单
+#define kSectionEditCommend 0   //小编推荐
+#define kSectionLive 1          //直播
+#define kSectionGuess 2         //猜你喜欢
+#define kSectionCityColumn 3    //城市歌单
+#define kSectionSpecial 4       //精品歌单
+#define kSectionHotRecommend 5  //热门推荐
+#define kSectionMore 6          //更多
 
 #define kSectionEditCommendHeight 230
-#define kSectionLiveHeight 227
-#define kSectionSpecialHeight 80
+#define kSectionLiveHeight        227
+#define kSectionSpecialHeight     80
+#define kSectionMoreHeight        60
 
 @interface FindRecommendController () <UITableViewDelegate,UITableViewDataSource>
 
@@ -74,14 +75,24 @@
         return kSectionEditCommendHeight;
     }else if (indexPath.section == kSectionSpecial){
         return kSectionSpecialHeight;
+    }else if (indexPath.section == kSectionHotRecommend){
+        return kSectionEditCommendHeight;
     }
-    return 50;
+    else if (indexPath.section == kSectionMore){
+        return kSectionMoreHeight;
+    }
+    return 0;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 8;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    if (section == kSectionSpecial) {
+        return self.viewModel.recommendModel.specialColumn.list?self.viewModel.recommendModel.specialColumn.list.count:0;
+    }else if (section == kSectionHotRecommend){
+        return  self.viewModel.hotGuessModel.hotRecommends.list?self.viewModel.hotGuessModel.hotRecommends.list.count:0;
+    }
     return 1;
 }
 
@@ -102,45 +113,39 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == kSectionEditCommend) {
-        static NSString *useID = @"editcell";
-        FindCellFee *cell = [tableView dequeueReusableCellWithIdentifier:useID];
-        if (!cell) {
-            cell = [[FindCellFee alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:useID];
-        }
+        FindCellFee *cell = (FindCellFee *)[XMLYFindCellFactory cellByFactory:tableView type:FindCellTypeFee];
         cell.recommendModel = self.viewModel.recommendModel.editorRecommendAlbums;
         return cell;
     }else if(indexPath.section == kSectionLive){
-        static NSString *useID = @"livecell";
-        FindCellLive *cell = [tableView dequeueReusableCellWithIdentifier:useID];
-        if (!cell) {
-            cell = [[FindCellLive alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:useID];
-        }
+        FindCellLive *cell = (FindCellLive *)[XMLYFindCellFactory cellByFactory:tableView type:FindCellTypeLive];
         cell.liveModel = self.viewModel.liveModel;
         return cell;
     }else if(indexPath.section == kSectionGuess){
-        static NSString *useID = @"guesscell";
-        FindCellFee *cell = [tableView dequeueReusableCellWithIdentifier:useID];
-        if (!cell) {
-            cell = [[FindCellFee alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:useID];
-        }
+        FindCellFee *cell = (FindCellFee *)[XMLYFindCellFactory cellByFactory:tableView type:FindCellTypeFee];
         cell.recommendModel = self.viewModel.hotGuessModel.guess;
         return cell;
     }else if(indexPath.section == kSectionCityColumn){
-        static NSString *useID = @"citycell";
-        FindCellFee *cell = [tableView dequeueReusableCellWithIdentifier:useID];
-        if (!cell) {
-            cell = [[FindCellFee alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:useID];
-        }
+        FindCellFee *cell = (FindCellFee *)[XMLYFindCellFactory cellByFactory:tableView type:FindCellTypeFee];
         cell.recommendModel = self.viewModel.hotGuessModel.cityColumn;
         return cell;
     }else if(indexPath.section == kSectionSpecial){
-        static NSString *useID = @"specialcell";
-        FindSpecialCell *cell = [tableView dequeueReusableCellWithIdentifier:useID];
-        if (!cell) {
-            cell = [[FindSpecialCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:useID];
-        }
+        FindSpecialCell *cell = (FindSpecialCell *)[XMLYFindCellFactory cellByFactory:tableView type:FindCellTypeSpecial];
         XMLYSpecialColumnDetailModel *specialModel = self.viewModel.recommendModel.specialColumn.list[indexPath.row];
         cell.specialModel = specialModel;
+        return cell;
+    }else if(indexPath.section == kSectionHotRecommend){
+        FindCellFee *cell = (FindCellFee *)[XMLYFindCellFactory cellByFactory:tableView type:FindCellTypeFee];
+        cell.hotRecommendModel = self.viewModel.hotGuessModel.hotRecommends.list[indexPath.row];
+        return cell;
+    }else if(indexPath.section == kSectionMore){
+        static NSString *reuseID = @"sectionMore";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
+        if (!cell) {
+            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseID];
+        }
+        cell.imageView.image = [UIImage imageNamed:@"find_gotocate"];
+        cell.textLabel.text = @"查看更多分类";
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         return cell;
     }
     

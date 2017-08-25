@@ -8,8 +8,10 @@
 
 #import "FindBaseCell.h"
 #import "XMLYFindRecommendModel.h"
+#import "XMLYFindHotGuessModel.h"
 
 @interface FindCellFee : FindBaseCell
 
 @property (nonatomic, strong) XMLYEditorRecommendAlbumsModel *recommendModel;
+@property (nonatomic, strong) XMLYHotRecommendDetailModel *hotRecommendModel;
 @end

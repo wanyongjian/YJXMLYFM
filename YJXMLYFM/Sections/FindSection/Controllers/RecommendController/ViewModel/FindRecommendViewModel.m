@@ -64,6 +64,14 @@
             return @{@"list":@"XMLYEditorRecommendAlbumsDetailModel"};
         }];
         
+        [XMLYHotRecommendModel mj_setupObjectClassInArray:^NSDictionary *{
+            return @{@"list":@"XMLYHotRecommendDetailModel"};
+        }];
+        
+        [XMLYHotRecommendDetailModel  mj_setupObjectClassInArray:^NSDictionary *{
+            return @{@"list":@"XMLYEditorRecommendAlbumsDetailModel"};
+        }];
+        
         self.hotGuessModel =  [XMLYFindHotGuessModel mj_objectWithKeyValues:response];
         complete();
     }];

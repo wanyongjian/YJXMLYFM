@@ -17,3 +17,8 @@
 @implementation XMLYHotDiscoveryColumnsDetailModel
 @end
 
+@implementation XMLYHotRecommendModel
+@end
+
+@implementation XMLYHotRecommendDetailModel
+@end

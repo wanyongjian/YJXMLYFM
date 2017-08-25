@@ -10,4 +10,5 @@
 
 @interface FindRecommendController : XMLYBaseFindController
 
+
 @end
