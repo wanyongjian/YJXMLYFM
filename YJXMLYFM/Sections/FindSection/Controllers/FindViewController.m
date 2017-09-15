@@ -56,6 +56,7 @@
 }
 
 #pragma mark - pageviewcontroller代理方法
+/** 下一个控制器 */
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController{
     
     NSInteger index = [self.controllers indexOfObject:viewController];
@@ -65,7 +66,7 @@
     index++;
     return [self.controllers objectAtIndex:index];
 }
-
+/** 上一个控制器 */
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController{
     
     NSInteger index = [self.controllers indexOfObject:viewController];
@@ -76,7 +77,7 @@
     return [self.controllers objectAtIndex:index];
     
 }
-
+/** 拖动切换控制器完成 */
 - (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray<UIViewController *> *)previousViewControllers transitionCompleted:(BOOL)completed{
     NSInteger index = [self.controllers indexOfObject:pageViewController.viewControllers.firstObject];
     [self.titleView transToIndex:index];

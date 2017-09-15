@@ -43,6 +43,9 @@
 		21CCFD1F1F4E6262002C399F /* XMLYFindLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CCFD1E1F4E6262002C399F /* XMLYFindLiveModel.m */; };
 		21CCFD221F4E64C9002C399F /* FindCellLive.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CCFD211F4E64C9002C399F /* FindCellLive.m */; };
 		21CCFD251F4ECFEE002C399F /* FindSpecialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CCFD241F4ECFEE002C399F /* FindSpecialCell.m */; };
+		21F9E6DB1F6BA6C1003BEEE2 /* XMLYFindCategoryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F9E6DA1F6BA6C1003BEEE2 /* XMLYFindCategoryRequest.m */; };
+		21F9E6DE1F6BAAD0003BEEE2 /* FindCategoryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F9E6DD1F6BAAD0003BEEE2 /* FindCategoryViewModel.m */; };
+		21F9E6E11F6BB83E003BEEE2 /* XMLYFindCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F9E6E01F6BB83E003BEEE2 /* XMLYFindCategoryModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +137,12 @@
 		21CCFD211F4E64C9002C399F /* FindCellLive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindCellLive.m; sourceTree = "<group>"; };
 		21CCFD231F4ECFEE002C399F /* FindSpecialCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindSpecialCell.h; sourceTree = "<group>"; };
 		21CCFD241F4ECFEE002C399F /* FindSpecialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindSpecialCell.m; sourceTree = "<group>"; };
+		21F9E6D91F6BA6C1003BEEE2 /* XMLYFindCategoryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYFindCategoryRequest.h; sourceTree = "<group>"; };
+		21F9E6DA1F6BA6C1003BEEE2 /* XMLYFindCategoryRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYFindCategoryRequest.m; sourceTree = "<group>"; };
+		21F9E6DC1F6BAAD0003BEEE2 /* FindCategoryViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindCategoryViewModel.h; sourceTree = "<group>"; };
+		21F9E6DD1F6BAAD0003BEEE2 /* FindCategoryViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindCategoryViewModel.m; sourceTree = "<group>"; };
+		21F9E6DF1F6BB83E003BEEE2 /* XMLYFindCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYFindCategoryModel.h; sourceTree = "<group>"; };
+		21F9E6E01F6BB83E003BEEE2 /* XMLYFindCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYFindCategoryModel.m; sourceTree = "<group>"; };
 		2B9B8851101143BC4C7F1FB0 /* libPods-YJXMLYFM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YJXMLYFM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3EE86D3F371AC358B4F159 /* Pods-YJXMLYFM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJXMLYFM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YJXMLYFM/Pods-YJXMLYFM.debug.xcconfig"; sourceTree = "<group>"; };
 		DEF906DBD884B14B765247F6 /* Pods-YJXMLYFM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJXMLYFM.release.xcconfig"; path = "Pods/Target Support Files/Pods-YJXMLYFM/Pods-YJXMLYFM.release.xcconfig"; sourceTree = "<group>"; };
@@ -287,17 +296,19 @@
 		214B87FE1F4BF8F100CD94F3 /* XMLYFindSectionAPI */ = {
 			isa = PBXGroup;
 			children = (
-				214B87FF1F4BF99600CD94F3 /* FindAPI */,
+				21F9E6D81F6BA688003BEEE2 /* FindCategoryAPI */,
+				214B87FF1F4BF99600CD94F3 /* FindRecommandAPI */,
 			);
 			path = XMLYFindSectionAPI;
 			sourceTree = "<group>";
 		};
-		214B87FF1F4BF99600CD94F3 /* FindAPI */ = {
+		214B87FF1F4BF99600CD94F3 /* FindRecommandAPI */ = {
 			isa = PBXGroup;
 			children = (
 				214B88001F4BF9E000CD94F3 /* XMLYFindAPI.h */,
 				214B88011F4BF9E000CD94F3 /* XMLYFindAPI.m */,
 			);
+			name = FindRecommandAPI;
 			path = FindAPI;
 			sourceTree = "<group>";
 		};
@@ -456,6 +467,9 @@
 			children = (
 				21B441AF1F467ACD00F92EA5 /* FindCategoryController.h */,
 				21B441B01F467ACD00F92EA5 /* FindCategoryController.m */,
+				21F9E6D51F6BA013003BEEE2 /* Model */,
+				21F9E6D61F6BA013003BEEE2 /* View */,
+				21F9E6D71F6BA013003BEEE2 /* ViewModel */,
 			);
 			path = CategoryController;
 			sourceTree = "<group>";
@@ -506,6 +520,40 @@
 				21B441C11F46C9BE00F92EA5 /* XMLYBaseRequest.m */,
 			);
 			path = HTTPBaseRequset;
+			sourceTree = "<group>";
+		};
+		21F9E6D51F6BA013003BEEE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				21F9E6DF1F6BB83E003BEEE2 /* XMLYFindCategoryModel.h */,
+				21F9E6E01F6BB83E003BEEE2 /* XMLYFindCategoryModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		21F9E6D61F6BA013003BEEE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		21F9E6D71F6BA013003BEEE2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				21F9E6DC1F6BAAD0003BEEE2 /* FindCategoryViewModel.h */,
+				21F9E6DD1F6BAAD0003BEEE2 /* FindCategoryViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		21F9E6D81F6BA688003BEEE2 /* FindCategoryAPI */ = {
+			isa = PBXGroup;
+			children = (
+				21F9E6D91F6BA6C1003BEEE2 /* XMLYFindCategoryRequest.h */,
+				21F9E6DA1F6BA6C1003BEEE2 /* XMLYFindCategoryRequest.m */,
+			);
+			path = FindCategoryAPI;
 			sourceTree = "<group>";
 		};
 		D4449ACB86E071686F2BD9A0 /* Frameworks */ = {
@@ -730,16 +778,19 @@
 				21255A691F4287C600295628 /* XMLYMacro.m in Sources */,
 				21255A661F4287A200295628 /* AppDelegate.m in Sources */,
 				212050441F455EB100367080 /* XMLYBaseController.m in Sources */,
+				21F9E6E11F6BB83E003BEEE2 /* XMLYFindCategoryModel.m in Sources */,
 				219B6BA21F4D11400020CD98 /* XMLYFindHotGuessModel.m in Sources */,
 				2120504E1F45667D00367080 /* FindSubTitleView.m in Sources */,
 				219B6BAD1F4D69B80020CD98 /* FindCellFee.m in Sources */,
 				21255A6E1F428A5200295628 /* RootController.m in Sources */,
 				2120504A1F45601900367080 /* FindViewController.m in Sources */,
 				214B87FD1F4BE08900CD94F3 /* FindRecommendViewModel.m in Sources */,
+				21F9E6DB1F6BA6C1003BEEE2 /* XMLYFindCategoryRequest.m in Sources */,
 				219B6BA51F4D23750020CD98 /* HeaderIconView.m in Sources */,
 				21B441BD1F467FBD00F92EA5 /* FindAnchorController.m in Sources */,
 				21B441C21F46C9BE00F92EA5 /* XMLYBaseRequest.m in Sources */,
 				2167C1471F4FBAFE00C4CFBD /* XMLYFindCellFactory.m in Sources */,
+				21F9E6DE1F6BAAD0003BEEE2 /* FindCategoryViewModel.m in Sources */,
 				21CCFD221F4E64C9002C399F /* FindCellLive.m in Sources */,
 				21C63A2B1F4AA9C600363108 /* XMLYFindFactory.m in Sources */,
 			);
