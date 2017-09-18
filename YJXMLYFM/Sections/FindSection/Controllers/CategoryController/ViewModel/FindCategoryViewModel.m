@@ -57,4 +57,20 @@
         complete();
     }];
 }
+
+- (NSInteger)numberOfSections{
+    NSInteger row = self.categoryListItem.list.count /6;
+    NSInteger colum = self.categoryListItem.list.count % 6;
+    
+    return colum == 0 ? row:row+1;
+}
+
+- (NSInteger)numberOfRowInSection:(NSInteger)section{
+    NSInteger row = self.categoryListItem.list.count /6;
+    if (section < row) {
+        return 3;
+    }else{
+        return (self.categoryListItem.list.count%6)/2;
+    }
+}
 @end

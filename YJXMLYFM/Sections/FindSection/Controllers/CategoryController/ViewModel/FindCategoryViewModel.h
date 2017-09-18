@@ -15,4 +15,6 @@
 @property (nonatomic, strong) XMLYFindCategoryModel *categoryListItem;
 
 - (void)refreshData;
+- (NSInteger)numberOfSections;
+- (NSInteger)numberOfRowInSection:(NSInteger)section;
 @end

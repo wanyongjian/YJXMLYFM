@@ -7,9 +7,12 @@
 //
 
 #import "FindRadioController.h"
+#import "FindRadioViewModel.h"
 
 @interface FindRadioController ()
 
+@property (nonatomic, strong) FindRadioViewModel *viewModel;
+@property (nonatomic, strong) UITableView *tabelView;
 @end
 
 @implementation FindRadioController
@@ -18,21 +21,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor greenColor];
+    @weakify(self)
+    [self.viewModel.radioUpdateSignal subscribeNext:^(id x) {
+        @strongify(self)
+        
+        [self.tabelView reloadData];
+    }];
+    [self.viewModel refreshData];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (FindRadioViewModel *)viewModel{
+    if (!_viewModel) {
+        _viewModel = [[FindRadioViewModel alloc]init];
+    }
+    return _viewModel;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
