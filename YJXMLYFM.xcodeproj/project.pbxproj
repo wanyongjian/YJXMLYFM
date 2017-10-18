@@ -39,6 +39,10 @@
 		21B441B71F467AEE00F92EA5 /* FindRankController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B441B61F467AEE00F92EA5 /* FindRankController.m */; };
 		21B441BD1F467FBD00F92EA5 /* FindAnchorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B441BC1F467FBD00F92EA5 /* FindAnchorController.m */; };
 		21B441C21F46C9BE00F92EA5 /* XMLYBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B441C11F46C9BE00F92EA5 /* XMLYBaseRequest.m */; };
+		21BE0ECF1F96DFB700D167C1 /* FindRankAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BE0ECE1F96DFB700D167C1 /* FindRankAPI.m */; };
+		21BE0ED31F96E65600D167C1 /* FindRankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BE0ED21F96E65600D167C1 /* FindRankModel.m */; };
+		21BE0EE11F972F2800D167C1 /* FindRankCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BE0EDF1F972F2800D167C1 /* FindRankCell.m */; };
+		21BE0EE21F972F2800D167C1 /* FindRankCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21BE0EE01F972F2800D167C1 /* FindRankCell.xib */; };
 		21C63A2B1F4AA9C600363108 /* XMLYFindFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C63A2A1F4AA9C600363108 /* XMLYFindFactory.m */; };
 		21CCFD1F1F4E6262002C399F /* XMLYFindLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CCFD1E1F4E6262002C399F /* XMLYFindLiveModel.m */; };
 		21CCFD221F4E64C9002C399F /* FindCellLive.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CCFD211F4E64C9002C399F /* FindCellLive.m */; };
@@ -133,6 +137,13 @@
 		21B441BC1F467FBD00F92EA5 /* FindAnchorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindAnchorController.m; sourceTree = "<group>"; };
 		21B441C01F46C9BE00F92EA5 /* XMLYBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYBaseRequest.h; sourceTree = "<group>"; };
 		21B441C11F46C9BE00F92EA5 /* XMLYBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYBaseRequest.m; sourceTree = "<group>"; };
+		21BE0ECD1F96DFB700D167C1 /* FindRankAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindRankAPI.h; sourceTree = "<group>"; };
+		21BE0ECE1F96DFB700D167C1 /* FindRankAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindRankAPI.m; sourceTree = "<group>"; };
+		21BE0ED11F96E65600D167C1 /* FindRankModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindRankModel.h; sourceTree = "<group>"; };
+		21BE0ED21F96E65600D167C1 /* FindRankModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindRankModel.m; sourceTree = "<group>"; };
+		21BE0EDE1F972F2800D167C1 /* FindRankCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindRankCell.h; sourceTree = "<group>"; };
+		21BE0EDF1F972F2800D167C1 /* FindRankCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindRankCell.m; sourceTree = "<group>"; };
+		21BE0EE01F972F2800D167C1 /* FindRankCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindRankCell.xib; sourceTree = "<group>"; };
 		21C63A291F4AA9C600363108 /* XMLYFindFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYFindFactory.h; sourceTree = "<group>"; };
 		21C63A2A1F4AA9C600363108 /* XMLYFindFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYFindFactory.m; sourceTree = "<group>"; };
 		21CCFD1D1F4E6262002C399F /* XMLYFindLiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYFindLiveModel.h; sourceTree = "<group>"; };
@@ -308,6 +319,7 @@
 		214B87FE1F4BF8F100CD94F3 /* XMLYFindSectionAPI */ = {
 			isa = PBXGroup;
 			children = (
+				21BE0ECC1F96DF8F00D167C1 /* FindRankAPI */,
 				21E9795C1F6F8E1D00BAC9AA /* FindRadioAPI */,
 				21F9E6D81F6BA688003BEEE2 /* FindCategoryAPI */,
 				214B87FF1F4BF99600CD94F3 /* FindRecommandAPI */,
@@ -504,6 +516,8 @@
 			children = (
 				21B441B51F467AEE00F92EA5 /* FindRankController.h */,
 				21B441B61F467AEE00F92EA5 /* FindRankController.m */,
+				21BE0ED41F972A8D00D167C1 /* View */,
+				21BE0ED01F96E64000D167C1 /* XMLYFindRankModel */,
 			);
 			path = RankController;
 			sourceTree = "<group>";
@@ -536,6 +550,34 @@
 				21B441C11F46C9BE00F92EA5 /* XMLYBaseRequest.m */,
 			);
 			path = HTTPBaseRequset;
+			sourceTree = "<group>";
+		};
+		21BE0ECC1F96DF8F00D167C1 /* FindRankAPI */ = {
+			isa = PBXGroup;
+			children = (
+				21BE0ECD1F96DFB700D167C1 /* FindRankAPI.h */,
+				21BE0ECE1F96DFB700D167C1 /* FindRankAPI.m */,
+			);
+			path = FindRankAPI;
+			sourceTree = "<group>";
+		};
+		21BE0ED01F96E64000D167C1 /* XMLYFindRankModel */ = {
+			isa = PBXGroup;
+			children = (
+				21BE0ED11F96E65600D167C1 /* FindRankModel.h */,
+				21BE0ED21F96E65600D167C1 /* FindRankModel.m */,
+			);
+			path = XMLYFindRankModel;
+			sourceTree = "<group>";
+		};
+		21BE0ED41F972A8D00D167C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21BE0EDE1F972F2800D167C1 /* FindRankCell.h */,
+				21BE0EDF1F972F2800D167C1 /* FindRankCell.m */,
+				21BE0EE01F972F2800D167C1 /* FindRankCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		21E9795C1F6F8E1D00BAC9AA /* FindRadioAPI */ = {
@@ -739,6 +781,7 @@
 			files = (
 				2173F3D71F4197870092A877 /* LaunchScreen.storyboard in Resources */,
 				21255A711F42E67D00295628 /* Assets.xcassets in Resources */,
+				21BE0EE21F972F2800D167C1 /* FindRankCell.xib in Resources */,
 				2173F3D21F4197870092A877 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -823,8 +866,10 @@
 				21B441A61F4678B800F92EA5 /* XMLYBaseFindController.m in Sources */,
 				21B441B71F467AEE00F92EA5 /* FindRankController.m in Sources */,
 				219B6BB01F4D7CF70020CD98 /* FindCellFeeItemView.m in Sources */,
+				21BE0ECF1F96DFB700D167C1 /* FindRankAPI.m in Sources */,
 				21CCFD1F1F4E6262002C399F /* XMLYFindLiveModel.m in Sources */,
 				21B441B11F467ACD00F92EA5 /* FindCategoryController.m in Sources */,
+				21BE0EE11F972F2800D167C1 /* FindRankCell.m in Sources */,
 				21E979681F6F95A400BAC9AA /* FindRadioModel.m in Sources */,
 				214B88061F4C17B000CD94F3 /* XMLYBaseModel.m in Sources */,
 				2173F3C91F4197870092A877 /* main.m in Sources */,
@@ -839,6 +884,7 @@
 				2120504E1F45667D00367080 /* FindSubTitleView.m in Sources */,
 				219B6BAD1F4D69B80020CD98 /* FindCellFee.m in Sources */,
 				21255A6E1F428A5200295628 /* RootController.m in Sources */,
+				21BE0ED31F96E65600D167C1 /* FindRankModel.m in Sources */,
 				2120504A1F45601900367080 /* FindViewController.m in Sources */,
 				214B87FD1F4BE08900CD94F3 /* FindRecommendViewModel.m in Sources */,
 				21F9E6DB1F6BA6C1003BEEE2 /* XMLYFindCategoryRequest.m in Sources */,
@@ -998,12 +1044,14 @@
 			baseConfigurationReference = 7F3EE86D3F371AC358B4F159 /* Pods-YJXMLYFM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = C7G78L37X3;
 				GCC_PREFIX_HEADER = YJXMLYFM/XMLYPrefixHeader.pch;
 				INFOPLIST_FILE = YJXMLYFM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com..YJXMLYFM;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecovacs.ecosphere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -1012,12 +1060,14 @@
 			baseConfigurationReference = DEF906DBD884B14B765247F6 /* Pods-YJXMLYFM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = C7G78L37X3;
 				GCC_PREFIX_HEADER = YJXMLYFM/XMLYPrefixHeader.pch;
 				INFOPLIST_FILE = YJXMLYFM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com..YJXMLYFM;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecovacs.ecosphere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

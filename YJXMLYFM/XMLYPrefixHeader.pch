@@ -20,4 +20,10 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "SDCycleScrollView.h"
 
+#ifdef DEBUG
+#define WWLOG(...) NSLog(__VA_ARGS__)
+#else
+#define WWLOG(...)
+#endif
+
 #endif /* XMLYPrefixHeader_pch */

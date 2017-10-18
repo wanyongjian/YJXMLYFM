@@ -35,7 +35,6 @@
     [self.view addSubview:self.pageViewController.view];
     [self addChildViewController:self.pageViewController];
     [self layoutViews];
-    
     [XMLYFindAPI requestWithRecommend:^(id response) {
         
     }];
